@@ -1,0 +1,6 @@
+[requires]
+pcapplusplus/22.05
+spdlog/[>=1.4.1]
+
+[generators]
+cmake
