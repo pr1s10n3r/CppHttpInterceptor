@@ -1,6 +1,7 @@
 [requires]
 pcapplusplus/22.05
 spdlog/[>=1.4.1]
+tclap/1.2.5
 
 [generators]
 cmake

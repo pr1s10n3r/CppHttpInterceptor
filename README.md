@@ -9,6 +9,7 @@ In-code dependencies will be installed later using `Conan`.
 2. [CMake](https://cmake.org/) as building tool.
 3. [PcapPlusPlus](https://pcapplusplus.github.io/) for network packets capture.
 4. [spdlog](https://github.com/gabime/spdlog) for fast logging.
+5. [TCLAP](https://tclap.sourceforge.net/) for command line argument parsing.
 
 ## Build
 
