@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-Please, before using this program, install the [Conan](https://conan.io/) package manager and the [CMake](https://cmake.org/) build tool.
+Please, **before using this program**, install the [Conan](https://conan.io/) package manager and the [CMake](https://cmake.org/) build tool.
 In-code dependencies will be installed later using `Conan`.
 
 1. The [Conan](https://conan.io/) package manager.
