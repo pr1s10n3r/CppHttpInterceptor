@@ -11,6 +11,11 @@ In-code dependencies will be installed later using `Conan`.
 4. [spdlog](https://github.com/gabime/spdlog) for fast logging.
 5. [TCLAP](https://tclap.sourceforge.net/) for command line argument parsing.
 
+### Windows Dependencies
+
+If you're running a Windows machine, make sure to install a Pcap API implementation such as
+[NpCap](https://npcap.com/#download) (recommended) or [WinPcap](https://www.winpcap.org/install/default.htm) (deprecated).
+
 ## Build
 
 ```shell
@@ -23,12 +28,16 @@ mkdir build && cd build
 # 3. Install dependencies using the Conan package manager
 conan install .. --build=missing
 
-# 4. Generate CMake files
+# 4. Generate CMake files.
 cmake .. -G "Unix Makefiles"
+# 4.1 If you are on Windows, generate CMake files using Visual Studio 17 2022 generator
+cmake .. -G "Visual Studio 17 2022"
 
 # 5. Compile project using generated make files
 cmake --build . --config Release
 ```
+
+> If you gave your build directory another name rather than `build`. **PLEASE DO NOT PUSH IT TO GITHUB**.
 
 ## Usage
 
@@ -46,7 +55,8 @@ chi -i en0 -o output.txt -l 10
 ## Known Limitations
 
 1. This program **does not support** `HTTPs` packets capture although its support should be easy to implement.
-2. If you are on a Windows platform, it is recommended to build this program using MinGW instead of Visual Studio.
+2. If you are on a Windows platform, it is recommended to build this program using Visual Studio.
+3. For most of users, this program should be running as privileged user (`root` for friends).
 
 ## License
 

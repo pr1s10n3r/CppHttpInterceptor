@@ -6,6 +6,10 @@
 #include "spdlog/spdlog.h"
 #include "HttpRecorder.hpp"
 
+#if defined(WIN32) || defined(_WIN32) || defined(__WIN32) && !defined(__CYGWIN__)
+#pragma comment(lib, "iphlpapi.lib")
+#endif
+
 int main(int argc, char *argv[])
 {
     TCLAP::CmdLine cmd("small C++ command line tool for HTTP interception", ' ', "0.0.1");

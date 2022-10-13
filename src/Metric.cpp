@@ -3,6 +3,7 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
+#include <algorithm>
 #include "HttpLayer.h"
 
 Metric::Metric() : totalHttpRequests(0)
