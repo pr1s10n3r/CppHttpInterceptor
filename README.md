@@ -35,6 +35,7 @@ xcode-select --install
 
 If you're running a Windows machine, make sure to install a Pcap API implementation such as
 [NpCap](https://npcap.com/#download) (recommended) or [WinPcap](https://www.winpcap.org/install/default.htm) (deprecated).
+Also, you will need a compiler. I recommend you to use [Visual Studio](https://visualstudio.microsoft.com/) latest version.
 
 ## Build
 
