@@ -59,7 +59,7 @@ chi -i en0 -o output.txt -l 10
 ## Known Limitations
 
 1. This program **does not support** `HTTPs` packets capture although its support should be easy to implement.
-2. If you are on a Windows platform, it is recommended to build this program using Visual Studio.
+2. If you are on a Windows platform, it is recommended to generate CMake files using Visual Studio rather than other generators.
 3. For most of users, this program should be running as privileged user (`root` for friends).
 
 ## License
