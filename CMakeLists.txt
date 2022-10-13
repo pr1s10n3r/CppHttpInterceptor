@@ -7,5 +7,7 @@ include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
 add_executable(chi src/Main.cpp src/HttpRecorder.cpp src/Metric.cpp)
+
 target_link_libraries(chi ${CONAN_LIBS})
 
+conan_target_link_libraries(chi)
