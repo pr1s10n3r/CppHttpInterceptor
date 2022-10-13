@@ -74,10 +74,22 @@ If the build was successful, you should find an executable file named `chi` or `
 
 ```shell
 # General program syntax:
-chi <-i INTERFACE_TO_INTERCEPT> [-o PATH_TO_OUTPUT_FILE] <-l TIME_IN_SECONDS>
+$ chi <-i INTERFACE_TO_INTERCEPT> [-o PATH_TO_OUTPUT_FILE] <-l TIME_IN_SECONDS>
 
 # For example, intercept the interface "en0" for 10 seconds and save the result to a file called output.txt
-chi -i en0 -o output.txt -l 10
+$ chi -i en0 -o output.txt -l 10
+
+# For more information, you can run the program with the --help argument:
+$ chi_mac_arm64.o --help
+PARSE ERROR:
+             Required arguments missing: lapse, interface
+
+Brief USAGE:
+   ./chi_mac_arm64.o  [-o <string>] -l <non-negative integer> -i <string>
+                      [--] [--version] [-h]
+
+For complete USAGE and HELP type:
+   ./chi_mac_arm64.o --help
 ```
 
 ## Known Limitations
