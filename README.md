@@ -80,16 +80,36 @@ $ chi <-i INTERFACE_TO_INTERCEPT> [-o PATH_TO_OUTPUT_FILE] <-l TIME_IN_SECONDS>
 $ chi -i en0 -o output.txt -l 10
 
 # For more information, you can run the program with the --help argument:
-$ chi_mac_arm64.o --help
-PARSE ERROR:
-             Required arguments missing: lapse, interface
+$ ./chi_mac_arm64.o --help
 
-Brief USAGE:
+USAGE:
+
    ./chi_mac_arm64.o  [-o <string>] -l <non-negative integer> -i <string>
                       [--] [--version] [-h]
 
-For complete USAGE and HELP type:
-   ./chi_mac_arm64.o --help
+
+Where:
+
+   -o <string>,  --output <string>
+     output filepath where results will be written
+
+   -l <non-negative integer>,  --lapse <non-negative integer>
+     (required)  duration in seconds interception will last
+
+   -i <string>,  --interface <string>
+     (required)  network interface to intercept
+
+   --,  --ignore_rest
+     Ignores the rest of the labeled arguments following this flag.
+
+   --version
+     Displays version information and exits.
+
+   -h,  --help
+     Displays usage information and exits.
+
+
+   small C++ command line tool for HTTP interception
 ```
 
 ## Known Limitations
