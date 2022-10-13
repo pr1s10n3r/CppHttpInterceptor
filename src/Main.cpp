@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     TCLAP::CmdLine cmd("small C++ command line tool for HTTP interception", ' ', "0.0.1");
     TCLAP::ValueArg<std::string> inetArg("i", "interface", "network interface to intercept", true, "", "string");
     TCLAP::ValueArg<uint32_t> lapseArg("l", "lapse", "duration in seconds interception will last", true, 0, "non-negative integer");
-    TCLAP::ValueArg<std::string> outFileArg("o", "output", "output filepath where results will be written", true, "./output.txt", "string");
+    TCLAP::ValueArg<std::string> outFileArg("o", "output", "output filepath where results will be written", false, "./output.txt", "string");
 
     cmd.add(inetArg);
     cmd.add(lapseArg);
