@@ -9,6 +9,8 @@ private:
     uint32_t totalHttpRequests;
     std::map<std::string, uint32_t> requestsPerHostname;
 
+    std::string getHistogram() const;
+
 public:
     Metric();
     virtual ~Metric();
