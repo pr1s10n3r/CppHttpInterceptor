@@ -6,8 +6,13 @@
 class Metric
 {
 private:
+    typedef std::pair<std::string, uint32_t> HostRequests;
+
     uint32_t totalHttpRequests;
     std::map<std::string, uint32_t> requestsPerHostname;
+
+    // This will help us to build the histogram
+    HostRequests popular;
 
     std::string getHistogram() const;
 
