@@ -39,6 +39,10 @@ cmake --build . --config Release
 
 > If you gave your build directory another name rather than `build`. **PLEASE DO NOT PUSH IT TO GITHUB**.
 
+### Windows Build using Visual Studio
+
+If for some reason you want to build the program using Visual Studio, make sure you're using the Release profile.
+
 ## Usage
 
 If the build was successful, you should find an executable file named `chi` or `chi.exe` if you're on Windows inside the
