@@ -1,9 +1,7 @@
 cmake_minimum_required(VERSION 2.8.12)
-project(CppHttpInterceptor)
+project(CppHttpInterceptor CXX)
 
-if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR "Clang")
-add_definitions("-std=c++20")
-endif()
+set (CMAKE_CXX_STANDARD 17)
 
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()

@@ -2,6 +2,7 @@
 pcapplusplus/22.05
 spdlog/[>=1.4.1]
 tclap/1.2.5
+tabulate/1.4
 
 [generators]
 cmake

@@ -1,5 +1,7 @@
 # Cpp Http Interceptor
 
+Small C++ Plain HTTP interceptor written in C++17.
+
 ## Dependencies
 
 Please, **before using this program**, install the [Conan](https://conan.io/) package manager and the [CMake](https://cmake.org/) build tool.
@@ -10,6 +12,7 @@ In-code dependencies will be installed later using `Conan`.
 3. [PcapPlusPlus](https://pcapplusplus.github.io/) for network packets capture.
 4. [spdlog](https://github.com/gabime/spdlog) for fast logging.
 5. [TCLAP](https://tclap.sourceforge.net/) for command line argument parsing.
+6. [Tabulate](https://github.com/p-ranav/tabulate) for pretty table formatting.
 
 ### Linux Dependencies
 
@@ -82,6 +85,11 @@ chi -i en0 -o output.txt -l 10
 1. This program **does not support** `HTTPs` packets capture although its support should be easy to implement.
 2. If you are on a Windows platform, it is recommended to generate CMake files using Visual Studio rather than other generators.
 3. For most of users, this program should be running as privileged user (`root` for friends).
+
+## Know Errors
+
+1. For some reason, if the program is run using the Visual Studio Code terminal, the program will crash when building
+   the Tabulate table. Just use other terminal like Windows Terminal, iTerm or Alacritty.
 
 ## License
 

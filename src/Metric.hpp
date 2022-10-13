@@ -14,6 +14,7 @@ private:
     // This will help us to build the histogram
     HostRequests popular;
 
+    std::string getHistogramBar(uint32_t reqCount) const;
     std::string getHistogram() const;
 
 public:
