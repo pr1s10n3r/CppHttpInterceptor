@@ -11,6 +11,26 @@ In-code dependencies will be installed later using `Conan`.
 4. [spdlog](https://github.com/gabime/spdlog) for fast logging.
 5. [TCLAP](https://tclap.sourceforge.net/) for command line argument parsing.
 
+### Linux Dependencies
+
+If you're running a Linux machine, you will need `libpcap` for development and building PcapPlusPlus from source.
+
+```shell
+# Debian/Ubuntu based distributions
+sudo apt install libpcap-dev
+
+# Fedora/CentOS/RHEL based distributions
+sudo dnf install libpcap-devel
+```
+
+### MacOS Dependencies
+
+If you're running a MacOS machine, you will need to install Xcode. After that, make sure to install Xcode command line tools:
+
+```shell
+xcode-select --install
+```
+
 ### Windows Dependencies
 
 If you're running a Windows machine, make sure to install a Pcap API implementation such as
